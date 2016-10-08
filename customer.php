@@ -12,6 +12,8 @@ The include expression includes the file where the code(<?php// include 'include
 <div class="wrapper">
 <div id="content">
 <h1>Customers</h1>
+<a href="createcustomer.php">Create customer</a>
+<a href="updatecustomer.php">Update customer</a> <br> <br>
 	<table>
 <thead>
 	<tr>
@@ -32,8 +34,7 @@ The include expression includes the file where the code(<?php// include 'include
 	?>
 
 </table>
-<a href="createcustomer.php">Create customer</a>
-<a href="updatecustomer.php">Update customer</a>
+
 
 </div>	
 <?php include 'includes/footer.php'; ?>

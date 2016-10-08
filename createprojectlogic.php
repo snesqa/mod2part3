@@ -16,4 +16,5 @@ $customerid = filter_input(INPUT_POST, 'customerid', FILTER_VALIDATE_INT) or die
 	//echo 'Your username is '.$email.' go to <a href="index.php">login</a>'
 	//header("location: index.php?signup=true");
 ?>
+<a href="project.php">Go back</a>
 

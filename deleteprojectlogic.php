@@ -10,3 +10,4 @@ $stmt->execute();
 echo 'Project deleted , affected rows: '.$stmt->affected_rows ;
 
 ?>
+<a href="project.php">Go back</a>

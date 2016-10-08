@@ -5,8 +5,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Add project resource</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+<div class="contact-wrapper">
+<h2>Add resource</h2>
 	<!--Insert project dropdown , resource dropdwon, start date enddate, hur -->
 <form action="addpresource.php" method="post">
 <!--  Projecets  -->
@@ -23,7 +26,6 @@
 
 ?>
 </select>
-<br>
 <!--  Resources  -->
 	<select name="resourceid">
 		<option>Choose resource</option>
@@ -38,11 +40,13 @@
 
 	?>
 
-</select><br>
-2016-10-09 00:00:00<br><input type="text" name="startdate"><br>
-2016-12-18 00:00:00<br><input type="text" name="enddate"><br>
-Hourly usage rate<br><input type="text" name="hur"><br>
+</select>
+Format 2016-10-09<input type="text" name="startdate">
+Format 2016-12-18<input type="text" name="enddate">
+Hourly usage rate<input type="text" name="hur">
 <input type="submit" value="Add resource to project">
 </form>
+<a href="project.php">Go back</a>
+</div>
 </body>
 </html>

@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+	 <html lang="en">
+	 <head>
+	 	<meta charset="UTF-8">
+	 	<title>Project details</title>
+	 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	 </head>
+	 <body>
+	 <div class="wrapper">
+	 
 <?php 
 require_once 'conn.php';
 $pid = filter_input(INPUT_GET, 'pid', FILTER_VALIDATE_INT) or die('pid');
@@ -13,11 +23,16 @@ $sql = 'SELECT project_name, project_description, p_otherDetails
 			$stmt->execute();
 			$stmt->bind_result( $projectname , $project_description , $p_otherDetails);
 		if($stmt->fetch()) {
-		echo $projectname . ' : '.$project_description.' : '.$p_otherDetails.'<br/>';
+		echo 'Project name : ' .$projectname . ', Description : '.$project_description.', Other description : '.$p_otherDetails.'<br>';
 				  
 			}
 	 ?>
-<a href="updateproject.php">Update project</a>
-<a href="createproject.php">Create project</a>
-<a href="addprojectresource.php">Add resource to project</a>
-<a href="project.php">Tilbage</a>
+	 <br>
+	 	<a href="updateproject.php">Update project</a><br>
+		<a href="createproject.php">Create project</a><br>
+		<a href="addprojectresource.php">Add resource to project</a><br>
+		<a href="project.php">Tilbage</a>
+	 </body>
+	 </div>
+	 </html>
+

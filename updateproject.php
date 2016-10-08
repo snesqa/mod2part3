@@ -5,8 +5,12 @@ require_once 'conn.php';?>
 <head>
 	<meta charset="UTF-8">
 	<title>Update project</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<div class="contact-wrapper">
+<h2>Update project</h2>
 	<form action="updateplogic.php" method="post">
 	<select name="projectid" onchange="window.location='updateproject.php?project_id='+this.value"><!-- +this.value / + is concatinate, this is element(select), value of that element-  -->
 	<option value="">Project name</option>
@@ -35,11 +39,12 @@ require_once 'conn.php';?>
 		}
 
 	?>
-	Project name : <br><input type="text" name="pname" value="<?php echo $ProjectName;?>"><br>
-	Description : <br><textarea type="text" name="pdesc"><?php echo $ProjectDescription;?></textarea><br>
-	Other desc : <br><textarea type="text" name="podetails"><?php echo $ProjectOtherDescription;?></textarea><br>
-	<br><input type="submit" value="Instant Update">
-	
+	Project name : <input type="text" name="pname" value="<?php echo $ProjectName;?>">
+	Description : <textarea type="text" name="pdesc"><?php echo $ProjectDescription;?></textarea>
+	Other desc : <textarea type="text" name="podetails"><?php echo $ProjectOtherDescription;?></textarea>
+	<input type="submit" value="Instant Update">
 	</form>
+	<a href="project.php">Go back</a>
+</div>
 </body>
 </html>

@@ -6,21 +6,21 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
 	<title>Sign up</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="contact-wrapper">
 
 <form action="createcustlogic.php" method="post">
-Name* <br>
-<input type="text" name="name"><br>
-Address*<br>
-<input type="text" name="address"><br>
-Contact name*<br>
-<input type="text" name="cname"><br>
-Phone*<br>
-<input type="text" name="phone"><br>
-<select name="zip"><br>
+Name* 
+<input type="text" name="name">
+Address*
+<input type="text" name="address">
+Contact name*
+<input type="text" name="cname">
+Phone*
+<input type="text" name="phone">
+<select name="zip">
 	<option value="">Zip code</option>
 	
 	<?php
@@ -33,7 +33,7 @@ Phone*<br>
 		}
 	?>
 			
-	</select><br><br>
+	</select>
 <input type="submit" value="Create new customer">
 </form>
 

@@ -35,8 +35,9 @@
 <table>
 <thead>
 	<tr>
-		<th colspan="2">Client</th>
+		
 		<th colspan="2">Project name</th>
+		<th colspan="2">Client</th>
 		<th colspan="2">Project resource</th>
 		<th colspan="2">Resource type</th>
 		<th colspan="2">Delete res</th>
@@ -69,7 +70,7 @@
 		while($stmt->fetch()) {
 		//echo $customername . ' : '.$projectname.' : '.$resourcename.'<br/>'.PHP_EOL;
 		echo '<tr><td colspan="2">' .$projectname . '</td>							   
-		<td colspan="2"><a href="projectdetails.php?pid=' .$pid . '">'.$customername.'</a></td>
+		<td colspan="2">'.$customername.'</a></td>
 		<td colspan="2">'.$resourcename.'</td>
 		<td colspan="2">'.$rtname.'</td>
 		<td colspan="2"><a href="deleteresourceonproject.php?pid=' .$pid . '&rid='.$rid .'">Delete</a></td>

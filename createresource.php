@@ -2,26 +2,24 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head><!--  this page holds the register form and upon submitting redirects to registerlogic.php -->
+<head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
 	<title>Create resource</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+<h2>Create resource</h2>
+<a href="index.php">To start</a>
 <div class="contact-wrapper">
-
 <form action="resourcelogic.php" method="post">
-Resource name*
-<input type="text" name="rname">
-
-Other details*
-<input type="text" name="details">
-
-
-<select name="resourcetype">
-	<option value="">Zip code</option>
-	
+Resource name* <br>
+<input type="text" name="rname"><br>
+Other details*<br>
+<input type="text" name="details"><br>
+<select name="resourcetype"><br>
+	<option value="">Resource type</option>
 	<?php
 		$sql = 'SELECT resourcetype_id, resourcetype_name FROM resourcetype';
 		$stmt = $link->prepare($sql);
@@ -32,9 +30,11 @@ Other details*
 		}
 	?>
 			
-	</select>
+	</select><br>
 <input type="submit" value="Add new resource">
 </form>
+
+<a href="about.php">Go back</a>
 
 
 </div>

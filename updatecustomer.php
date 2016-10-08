@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
 	<title>Sign up</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -23,15 +23,15 @@
 			echo '	<option value="'.$custoid.'">'.$custoname.'</option>'.PHP_EOL;
 		}
 	?>			
-	</select><br><br>
-Customer name<br>
-<input type="text" name="name" value=""><br>
-Address<br>
-<input type="text" name="address" value=""><br>
-Contact name<br>
-<input type="text" name="cname" value=""><br>
-Phone<br>
-<input type="text" name="phone" value=""><br>
+	</select>
+Customer name
+<input type="text" name="name" value="">
+Address
+<input type="text" name="address" value="">
+Contact name
+<input type="text" name="cname" value="">
+Phone
+<input type="text" name="phone" value="">
 <select name="zip">
 	<option value="">City name</option>
 	<?php 
@@ -44,11 +44,8 @@ Phone<br>
 		}
 	?>
 </select>
-	<br><br>
 <input type="submit" value="Update customer">
 </form>
-
- <br>
 <a href="customer.php">Go back</a>
 </div>
 </body>

@@ -13,18 +13,14 @@ The include expression includes the file where the code(<?php// include 'include
 <div class="wrapper">
 <div id="content">
 <h1>Rescources</h1>
-
-
+<a href="createresource.php">Add new resource</a> <br> <br>
 <table>
 <thead>
 	<tr>
 		<th colspan="2">Title</th>
 		<th colspan="2">Employee</th>
 	</tr>
-</thead>
-
-
-		
+</thead>	
 <?php require_once 'conn.php'; ?>
 	<?php
 		$stmt = $link->prepare("SELECT resource.resource_id, resourcetype.resourcetype_name, resource.resource_name
@@ -38,14 +34,9 @@ The include expression includes the file where the code(<?php// include 'include
 		<td td colspan="2">'.$rname.'</td></tr>';
 		}
 	?>
-	
-
 </table>
-
 </div>	
 <?php include 'includes/footer.php'; ?>
-
 </div><!--wrapper-->
-
 </body>
 </html>
