@@ -23,3 +23,5 @@ where project_id=?";
 	//echo 'Your username is '.$email.' go to <a href="index.php">login</a>'
 	//header("location: index.php?signup=true");
 ?>
+<br>
+<a href="project.php">Go back</a>

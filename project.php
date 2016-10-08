@@ -8,8 +8,30 @@
 
 <div class="wrapper">
 <div id="content">
-<h1>Projects</h1>
+<h1>Projects</h1><br>
 
+<table>
+<thead>
+	<tr>
+		<th colspan="2">Project details</th>
+	</tr>
+</thead> 
+	<?php require_once 'conn.php'; 
+		$stmt = $link->prepare("SELECT distinct project_name, project_id
+								FROM project_has_resource 
+								JOIN project
+								ON project.project_id = project_has_resource.project_project_id");
+		$stmt->execute();
+		$stmt->bind_result($projectname, $pid );
+		while($stmt->fetch()) {
+		
+		echo '			   
+		<td colspan="2"><a href="projectdetails.php?pid=' .$pid . '">'.$projectname.'</a></td></tr>';
+		}
+	?>
+</table> <br>
+<h3>View project details under 'project name'</h3><br>
+<h3>Delete resource from project on 'Delete res'</h3><br>
 <table>
 <thead>
 	<tr>
@@ -17,7 +39,7 @@
 		<th colspan="2">Project name</th>
 		<th colspan="2">Project resource</th>
 		<th colspan="2">Resource type</th>
-		<th colspan="2">Delete</th>
+		<th colspan="2">Delete res</th>
 	</tr>
 </thead> 
 	<?php require_once 'conn.php'; 
@@ -57,6 +79,12 @@
 	?>
 
 </table>
+<br>
+<a href="createproject.php">Create project</a>
+<a href="addprojectresource.php">Add resource to project</a>
+<a href="updateproject.php">Update project</a>
+
+
 </div>	
 <?php include 'includes/footer.php'; ?>
 

@@ -22,5 +22,8 @@ $stmt = $link->prepare($sql);
 	$stmt->execute();
 
 	//echo 'inserted '.$name.' as id:'.($stmt->insert_id); // id for inserted record
-	echo 'Succes!';
+	echo 'Succes! New resource has been added to chosen project';
+
  ?>
+ <br>
+<a href="project.php">Go back</a>

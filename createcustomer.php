@@ -12,15 +12,15 @@
 <div class="contact-wrapper">
 
 <form action="createcustlogic.php" method="post">
-Name*
-<input type="text" name="name">
-Address*
-<input type="text" name="address">
-Contact name*
-<input type="text" name="cname">
-Phone*
-<input type="text" name="phone">
-<select name="zip">
+Name* <br>
+<input type="text" name="name"><br>
+Address*<br>
+<input type="text" name="address"><br>
+Contact name*<br>
+<input type="text" name="cname"><br>
+Phone*<br>
+<input type="text" name="phone"><br>
+<select name="zip"><br>
 	<option value="">Zip code</option>
 	
 	<?php
@@ -33,11 +33,12 @@ Phone*
 		}
 	?>
 			
-	</select>
+	</select><br><br>
 <input type="submit" value="Create new customer">
 </form>
 
-
+ <br>
+<a href="customer.php">Go back</a>
 </div>
 </body>
 </html>

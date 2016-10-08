@@ -27,14 +27,14 @@ nav{
 }
 nav ul{
 	list-style-type:none;
-	width:370px;
+	width:60em;
 	margin:auto;
 }
 nav li{
 	float:left;
 	list-style:none;
 	margin:0 auto;
-	height:40px;
+	height:50px;
 	line-height:40px;
 	font-size:1.4em;
 	padding: 0 3%;
@@ -43,28 +43,20 @@ nav li a{
 	text-decoration:none;
 	color: #202E67;
 }
-/*nth:child() - allows to target a specific element, giving the menu links different active state colours*/ 
-li:nth-child(1) a.active{
+
+li a.active{
 	color: #f440d3;
 }
-li:nth-child(2) a.active{
-	color: #2bb2fc;
-}
-li:nth-child(3) a.active{
-	color: #f9b630;
-}
-li:nth-child(4) a.active{
-	color: #41f266;
-}
+
 #content{
 	width:50em;
 	min-height:500px;
 	margin:0 auto;
-	 
+	
 }
 #content h1{
 	text-align:center; 
-	margin-top:.5em;
+	margin:.5em auto;
 	font-style:italic;
 }
 #content h2{
@@ -73,7 +65,7 @@ li:nth-child(4) a.active{
 	font-style:italic;
 	color:#0A1856;
 }
-
+#content p{ font-size: 1.3em; line-height: 1.7em; }
 #footer-info{	
 	width:100%;
 	min-height:50px;

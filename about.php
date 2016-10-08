@@ -1,5 +1,5 @@
 <?php 
-	$pageTitle = "About";
+	$pageTitle = "Rescources";
     include 'includes/header.php'; 
 ?>
 
@@ -12,7 +12,7 @@ The include expression includes the file where the code(<?php// include 'include
 
 <div class="wrapper">
 <div id="content">
-<h1>About</h1>
+<h1>Rescources</h1>
 
 
 <table>
@@ -34,7 +34,8 @@ The include expression includes the file where the code(<?php// include 'include
 		$stmt->execute();
 		$stmt->bind_result($rid, $rtype, $rname);
 		while($stmt->fetch()) {
-		echo '<tr class="alt" ><td colspan="2">' .$rtype . '</td><td td colspan="2">'.$rname.'</td></tr>';
+		echo '<tr class="alt" ><td colspan="2">' .$rtype . '</td>
+		<td td colspan="2">'.$rname.'</td></tr>';
 		}
 	?>
 	

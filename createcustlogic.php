@@ -13,7 +13,9 @@ $sql = 'INSERT INTO customer ( customer_name, customer_adress, c_contactName, c_
 	$stmt->bind_param('ssssi', $name, $address, $cname, $phone, $zip);
 	$stmt->execute();
 
-	echo 'inserted '.$name.' as id:'.($stmt->insert_id); // id for inserted record
+	echo 'New user '.$name.' as id:'.($stmt->insert_id); // id for inserted record
 	//echo 'Your username is '.$email.' go to <a href="index.php">login</a>'
 	//header("location: index.php?signup=true");
 ?>
+<br>
+<a href="customer.php">Go back</a>

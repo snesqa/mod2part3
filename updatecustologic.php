@@ -26,3 +26,5 @@ ini_set('display_errors', 1);
 		}
 
  ?>
+ <br>
+<a href="customer.php">Go back</a>

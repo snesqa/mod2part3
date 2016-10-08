@@ -8,7 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
 <div class="contact-wrapper">
+<p>WARNING - Make sure to fill in data in fields before updating customer, otherwise excisting data will be emptied from the database.</p>
 <form action="updatecustologic.php" method="post">
 <select name="custoid">
 	<option value="">customer name</option>	
@@ -21,14 +23,14 @@
 			echo '	<option value="'.$custoid.'">'.$custoname.'</option>'.PHP_EOL;
 		}
 	?>			
-	</select><br>
-Customer name
+	</select><br><br>
+Customer name<br>
 <input type="text" name="name" value=""><br>
-Address
+Address<br>
 <input type="text" name="address" value=""><br>
-Contact name
+Contact name<br>
 <input type="text" name="cname" value=""><br>
-Phone
+Phone<br>
 <input type="text" name="phone" value=""><br>
 <select name="zip">
 	<option value="">City name</option>
@@ -42,9 +44,12 @@ Phone
 		}
 	?>
 </select>
-	<br>
+	<br><br>
 <input type="submit" value="Update customer">
 </form>
+
+ <br>
+<a href="customer.php">Go back</a>
 </div>
 </body>
 </html>

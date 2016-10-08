@@ -6,17 +6,21 @@
     <body>
         
             <?php include 'includes/menu.php'; ?>
-        <!-- This code includes the menu into the page. include take the specified filename and includes it 
-        on the page.
-        The include expression includes the file where the code(<?php// include 'includes/menu.php'; ?>) is placed in the code -->
         
         <div class="wrapper">
         <div id="content">
-        <h1>Portfolio</h1>
+        <h1>Welcome to Web developers db/crud system</h1>
         
-        
-        
-        
+        <p>Here's a quick tour of the system flow.</p>
+        <p>System functionalities;
+         register/create new customers, resources and project in the system. <br>
+            Update customer and project info. <br>
+            Add and delete a resource to a project. <br>
+        </p><p>
+        The system must have customer registered in order to create a project. <br>
+        The system must have resource registered in order to add resource to project. <br>
+         </p>
+        <img src="images/flow.png" alt="Systen Flow" width="70%" height="70%">
         
         </div>	
             <?php include 'includes/footer.php'; ?>

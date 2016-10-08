@@ -23,7 +23,28 @@ style class="active". The style rules are defined in style.css located in the cs
 	<ul>
 		<li><a href="index.php" <?php if($current == 'index.php'){ echo 'class="active"';} ?>>Home</a></li>
 	    <li><a href="project.php" <?php if($current == 'project.php'){ echo 'class="active"';} ?>>Projects</a></li>
-	    <li><a href="about.php" <?php if($current == 'about.php'){ echo 'class="active"';} ?>>About</a></li>
-	    <li><a href="contact.php" <?php if($current == 'contact.php'){ echo 'class="active"';} ?>>Contact</a></li>
+	    <li><a href="about.php" <?php if($current == 'about.php'){ echo 'class="active"';} ?>>Resources</a></li>
+	    <li><a href="customer.php" <?php if($current == 'customer.php'){ echo 'class="active"';} ?>>Customers</a></li>
+
 	</ul>
 </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
