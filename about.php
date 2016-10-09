@@ -13,7 +13,7 @@ The include expression includes the file where the code(<?php// include 'include
 <div class="wrapper">
 <div id="content">
 <h1>Rescources</h1>
-<a href="createresource.php">Add new resource</a> <br> <br>
+<a href="createresource.php">Create resource</a> <br> <br>
 <table>
 <thead>
 	<tr>

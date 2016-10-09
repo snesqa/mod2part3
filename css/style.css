@@ -49,7 +49,7 @@ nav li a{
 }
 
 li a.active{
-	color: #f440d3;
+	color: #2bb2fc;
 }
 
 #content{
@@ -127,7 +127,7 @@ input[type="submit"], button {
 	box-sizing:border-box;
 	color: #413E72;
 	padding: 1em 1em 2em 1em;
-	font-family: 'lOpen-Sans', arial, helvetica, sans-serif;
+	font-family: 'Open-Sans', arial, helvetica, sans-serif;
 	font-style: italic;
 	font-weight: lighter;
 	-webkit-box-shadow: 24px 22px 54px -30px rgba(85,88,105,0.56);

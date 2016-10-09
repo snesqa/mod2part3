@@ -10,9 +10,10 @@
 </head>
 <body>
 
-<h2>Create resource</h2>
+
 <a href="index.php">To start</a>
 <div class="contact-wrapper">
+<h2>Create resource</h2>
 <form action="resourcelogic.php" method="post">
 Resource name* <br>
 <input type="text" name="rname"><br>

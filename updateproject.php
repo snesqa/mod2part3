@@ -20,7 +20,7 @@ require_once 'conn.php';?>
 		$stmt->execute();
 		$stmt->bind_result($pid, $pname);
 		while ($stmt->fetch()) {
-			$s = ($pid==(int)$_GET['project_id'])?'selected=selected"':'';//select selected pname, it selects the current value in dropdown to be shown and not the default value 
+			$s = ($pid==(int)$_GET['project_id'])?'selected=selected':'';//select selected pname, it selects the current value in dropdown to be shown and not the default value 
 			echo '<option value="'.$pid.'" '.$s.'>'.$pname.'</option>';
 		}
 

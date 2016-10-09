@@ -24,7 +24,6 @@ ini_set('display_errors', 1);
 		else {
 		echo 'Updated '.$stmt->affected_rows.' rows';
 		}
-
  ?>
  <br>
 <a href="customer.php">Go back</a>
