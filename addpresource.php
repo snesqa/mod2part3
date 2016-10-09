@@ -21,8 +21,8 @@ $stmt = $link->prepare($sql);
 	$stmt->bind_param('iissd', $projectid, $resourceid, $startdate, $enddate, $hur);
 	$stmt->execute();
 
-	//echo 'inserted '.$name.' as id:'.($stmt->insert_id); // id for inserted record
-	echo 'Succes! New resource has been added to chosen project';
+	echo 'New resource is inserted as project id: '.$projectid.' and resource id:'.$resourceid; // id for inserted record
+	
 
  ?>
  <br>
