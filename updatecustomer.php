@@ -4,13 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
-	<title>Sign up</title>
+	<title>Update customer</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
 <div class="contact-wrapper">
-<p>WARNING - Make sure to fill in data in fields before updating customer, otherwise excisting data will be emptied from the database.</p>
+<h2>Update customer</h2>
 <form action="updatecustologic.php" method="post">
 <select name="custoid" onchange="window.location='updatecustomer.php?custo_id='+this.value">
 	<option value="">customer name</option>	

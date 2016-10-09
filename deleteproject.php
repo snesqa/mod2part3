@@ -6,7 +6,7 @@
 	<title>create project</title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
-	<title>Create project</title>
+	<title>Delete resource from project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>

@@ -5,12 +5,12 @@
 <head><!--  this page holds the register form and upon submitting redirects to registerlogic.php -->
 	<meta charset="UTF-8">
 	<meta name="author" content="Snezana Ilic" />
-	<title>Sign up</title>
+	<title>Create customer</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <div class="contact-wrapper">
-
+<h2>Create customer</h2>
 <form action="createcustlogic.php" method="post">
 Name* 
 <input type="text" name="name">

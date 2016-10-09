@@ -3,13 +3,10 @@
     include 'includes/header.php'; 
 ?>
 <body>
-
 <?php include 'includes/menu.php'; ?>
-
 <div class="wrapper">
 <div id="content">
 <h1>Projects</h1><br>
-
 <table>
 <thead>
 	<tr>

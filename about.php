@@ -1,11 +1,12 @@
 <?php 
 	$pageTitle = "Rescources";
-    include 'includes/header.php'; 
+    include 'includes/header.php';
+    include 'includes/menu.php'; 
 ?>
 
 <body>
 
-<?php include 'includes/menu.php'; ?>
+<?php  ?>
 <!-- This code includes the menu into the page. include take the specified filename and includes it 
 on the page.
 The include expression includes the file where the code(<?php// include 'includes/menu.php'; ?>) is placed in the code -->
